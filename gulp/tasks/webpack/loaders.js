@@ -19,7 +19,7 @@ export default function(opts) {
   let jsonLoader = ['json-loader'];
 
   let sassParams = [
-    //`outputStyle=${DEBUG ? 'expanded' : 'compressed'}`
+    'sourceMap'
   ];
 
   if(includePaths && Array.isArray(includePaths)) {
@@ -32,7 +32,6 @@ export default function(opts) {
   if (DEBUG) {
     jsxLoader = [];
     jsxLoader.push('babel-loader?optional[]=runtime&stage=0&plugins=rewire');
-    sassParams.push('sourceMap');
 
     sassLoader = [
       'style-loader',

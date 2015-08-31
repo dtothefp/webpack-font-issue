@@ -1,5 +1,7 @@
 Demo of `Failed to decode downloaded font:`
 
+*Fonts will load initially with browserSync server but will flicker and then be blocked*
+
 ```sh
 gulp watch #builds assets and serves from webpack-dev-server
 gulp build #builds assets and serves from browser-sync
@@ -10,12 +12,10 @@ Setup:
 ```js
 let fileLoader = 'file-loader?name=[path][name].[ext]';
 let sassParams = [
-  `outputStyle=${DEBUG ? 'expanded' : 'compressed'}`
+  'sourceMap'
 ];
 
 if (/* gulp watch*/) {
-  sassParams.push('sourceMap');
-
   sassLoader = [
     'style-loader',
     'css-loader?sourceMap&importLoaders=2',
