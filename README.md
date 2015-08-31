@@ -42,4 +42,4 @@ loaders: [
   }
 ]
 ```
-<img width="485" alt="screen shot 2015-08-28 at 12 25 33 pm" src="http://cl.ly/image/3d1C0c0A0z2l">
+![](http://cl.ly/image/3d1C0c0A0z2l)
