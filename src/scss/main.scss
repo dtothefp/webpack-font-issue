@@ -1,0 +1,56 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+
+@if variable-exists(google-fonts-url) {
+  @import url($google-fonts-url);
+}
+
+@if variable-exists(fonts) {
+  @each $font-face in $fonts {
+    @font-face {
+      font-family: $font-face;
+      font-style: normal;
+      font-weight: normal;
+      src: url('font/#{$font-face}.woff') format('woff'),
+           url('font/#{$font-face}.ttf') format('truetype');
+    }
+  }
+}
+
+@font-face {
+  font-family: 'UnityRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/UnityText-Roman.woff') format('woff'),
+       url('../fonts/UnityText-Roman.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'UnityBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/UnityText-Bold.woff') format('woff'),
+       url('../fonts/UnityText-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+	src: url('../fonts/icomoon.ttf') format('truetype'),
+		   url('../fonts/icomoon.woff') format('woff');
+}
+
+.unity-regular {
+  font-family: 'UnityRegular';
+  color: lavendarblush;
+}
+.unity-bold {
+  font-family: 'UnityBold';
+  color: firebrick;
+}
+.icomoon {
+	font-family: 'icomoon';
+  color: goldenrod;
+}
