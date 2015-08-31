@@ -42,3 +42,4 @@ loaders: [
   }
 ]
 ```
+![](https://s3.amazonaws.com/f.cl.ly/items/3e3u0f370w0Z3g3X1h1n/Image%202015-08-31%20at%205.51.15%20PM.png)
