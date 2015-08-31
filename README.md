@@ -1,5 +1,7 @@
 Demo of `Failed to decode downloaded font:`
 
+Related to https://github.com/webpack/style-loader/issues/55
+
 *Fonts will load initially with browserSync server but will flicker and then be blocked*
 
 ```sh
